@@ -1,0 +1,41 @@
+name: Claims
+version: 1.0.0
+author: grafando
+description: Plugin allowing Claims
+main: com.grafando.claims.Claims
+api-version: 1.16
+load: STARTUP
+commands:
+  getclaimblocks:
+    description: command to identify number of claimblocks and attain more
+    usage: /<command> argument
+  sellclaimblocks:
+    description: command to identify number of claimblocks and sell some
+    usage: /<command> argument
+  deletethisclaim:
+    description: command to delete claim you a currently standing in
+    usage: /<command>
+  deleteallclaims:
+    description: command to delete all owned claims
+    usage: /<command>
+  resetclaiminstance:
+    description: resets claimography instance initially used to create the claim
+    usage: /<command>
+  grantaccess:
+    description: grants a player access to claimed interaction devices (buttons; levers; etc...)
+    usage: /<command> argument
+  revokeaccess:
+    description: revokes access from a player
+    usage: /<command> argument
+  trust:
+    description: trusts a player to your claim; he can now build and break here
+    usage: /<command> argument
+  revoketrust:
+    description: revokes a players trust to a claim
+    usage: /<command> argument
+  gettrustlist:
+    description: lists all players with trusts to this claim
+    usage: /<command>
+  getaccesslist:
+    description: lists all players with access to this claim
+    usage: /<command>
